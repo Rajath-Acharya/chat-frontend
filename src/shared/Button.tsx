@@ -3,6 +3,7 @@ import React, { ButtonHTMLAttributes } from 'react';
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   submit?: boolean;
+  onClick: any;
 }
 
 const Button: React.FC<Props> = ({ text, submit = false, ...rest }) => {
