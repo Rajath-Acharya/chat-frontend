@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,scss,md,json}' --config ./.prettierrc.json",
     "prepare": "husky install"
   },
   "dependencies": {

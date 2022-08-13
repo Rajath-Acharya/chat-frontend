@@ -1,7 +1,7 @@
 import React from 'react';
 
-function NoMatch() {
+const NoMatch = () => {
   return <div>NoMatch</div>;
-}
+};
 
 export default NoMatch;

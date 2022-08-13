@@ -9,7 +9,7 @@ const Dashboard = React.lazy(() => import('./components/Dashboard'));
 const Login = React.lazy(() => import('./components/Login'));
 const Signup = React.lazy(() => import('./components/Signup'));
 
-function App() {
+const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -42,6 +42,6 @@ function App() {
       <Route path="*" element={<NoMatch />} />
     </Routes>
   );
-}
+};
 
 export default App;
