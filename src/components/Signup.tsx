@@ -8,7 +8,7 @@ import { toaster } from '../services/utils';
 import Button from '../shared/Button';
 import InputForm from '../shared/InputForm';
 
-import styles from '../styles/auth.module.scss';
+import styles from '../styles/Auth.module.scss';
 
 const Signup: React.FC = () => {
   const [formData, setFormData] = useState<RegisterPayload>({
@@ -47,18 +47,21 @@ const Signup: React.FC = () => {
             placeholder="Enter your username"
             name="userName"
             type="text"
+            required
             onChange={handleInputChange}
           />
           <InputForm
             placeholder="Enter your email"
             name="email"
             type="email"
+            required
             onChange={handleInputChange}
           />
           <InputForm
             placeholder="Enter your password"
             name="password"
             type="password"
+            required
             onChange={handleInputChange}
           />
           <Button onClick={signup} text="SIGN UP" submit />

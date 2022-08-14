@@ -8,7 +8,7 @@ import { toaster } from '../services/utils';
 import Button from '../shared/Button';
 import InputForm from '../shared/InputForm';
 
-import styles from '../styles/auth.module.scss';
+import styles from '../styles/Auth.module.scss';
 
 const Login: React.FC = () => {
   const [formData, setFormData] = useState<LoginPayload>({
@@ -45,12 +45,14 @@ const Login: React.FC = () => {
             placeholder="Enter your email"
             name="email"
             type="email"
+            required
           />
           <InputForm
             onChange={handleInputChange}
             placeholder="Enter your password"
             name="password"
             type="password"
+            required
           />
           <Button onClick={signIn} text="LOGIN" submit />
         </form>

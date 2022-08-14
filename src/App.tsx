@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route
-            path="dashboard/*"
+            path="/dashboard/*"
             element={
               <React.Suspense fallback={<>...</>}>
                 <Dashboard />
