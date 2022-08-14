@@ -1,0 +1,19 @@
+.layoutWrapper {
+  max-width: 1368px;
+  width: 100%;
+  border-radius: 16px;
+  background-color: #050607;
+  margin: 16px auto;
+  padding: 8px 8px 8px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  min-height: calc(100vh - 32px);
+  .content {
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px;
+    flex: 1;
+    min-height: calc(100vh - 48px);
+  }
+}
